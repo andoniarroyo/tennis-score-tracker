@@ -1,0 +1,394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The matchScoreCalculator increases the player 1 score when the player1 scored 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "15",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator increases the player 2 score when the player1 scored 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "15",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator increasing the game in case both players win 6 games the tie break mode starts 1`] = `
+Object {
+  "inTiebreakMode": true,
+  "player1": Object {
+    "games": 6,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 6,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator increasing the game in spite of reaching 6 games, does not increase the sets if the difference is not equal 
+        or bigger than 2 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 6,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 5,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator increasing the game in tie break mode adds point to the tiebreak 1`] = `
+Object {
+  "inTiebreakMode": true,
+  "player1": Object {
+    "games": 6,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 1,
+  },
+  "player2": Object {
+    "games": 6,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator increasing the game in tie break mode continue adding points if the difference is smaller than 2 points 1`] = `
+Object {
+  "inTiebreakMode": true,
+  "player1": Object {
+    "games": 6,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 8,
+  },
+  "player2": Object {
+    "games": 6,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 7,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator increasing the game in tie break mode wins the game and resolves the tiebreak mode if the value is 7 or more and the difference 
+          is equal or bigger than  2 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [
+      7,
+    ],
+    "score": "0",
+    "sets": 1,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [
+      6,
+    ],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator increasing the game increases the game when the player wins the game 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 1,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 1,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator increasing the game increases the game when the player wins the game from the advantage 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 1,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator increasing the game increases the sets when the player wins 6 games and the other player 4 or less 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [
+      6,
+    ],
+    "score": "0",
+    "sets": 1,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [
+      4,
+    ],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator increasing the sets finishes the match when a player wins the defined set to win amount of sets 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [
+      6,
+    ],
+    "score": "0",
+    "sets": 3,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [
+      4,
+    ],
+    "score": "0",
+    "sets": 2,
+    "tieBreak": 0,
+  },
+  "status": "finished",
+  "winner": "player1",
+}
+`;
+
+exports[`The matchScoreCalculator increasing the sets increases the sets for the scoring player and reset the games and scores 
+        for both players 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [
+      6,
+    ],
+    "score": "0",
+    "sets": 1,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [
+      4,
+    ],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator scoring without change the game gives advantage if both players were in deuce (40 - 40) 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "A",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "40",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator scoring without change the game increases the score from 0 to 15 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "15",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator scoring without change the game increases the score from 15 to 30 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "30",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator scoring without change the game increases the score from 30 to 40 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "40",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "0",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;
+
+exports[`The matchScoreCalculator scoring without change the game sets the deuce again if the other player had advantage 1`] = `
+Object {
+  "inTiebreakMode": false,
+  "player1": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "40",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "player2": Object {
+    "games": 0,
+    "historicScoreboard": Array [],
+    "score": "40",
+    "sets": 0,
+    "tieBreak": 0,
+  },
+  "status": "inplay",
+  "winner": "",
+}
+`;

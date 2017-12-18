@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlayerScoreTracker /> renders the player score tracker 1`] = `
+<div>
+  <div
+    className="player-name"
+  >
+    andoni
+  </div>
+  <div
+    className="player-score-content"
+  >
+    <div>
+      sets:
+    </div>
+    <div>
+      0
+    </div>
+    <div>
+      games:
+    </div>
+    <div>
+      0
+    </div>
+    <div>
+      score:
+    </div>
+    <div
+      className="score-main-value"
+    >
+      0
+    </div>
+    <div
+      className="scored"
+    >
+      <button
+        disabled={true}
+        onClick={[Function]}
+      >
+        andoni
+         scored!
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,13 @@
+@import "../base/_variables";
+.title-section {
+    grid-column: span 3;
+    padding-bottom: 0.5em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 75% 25%;
+    grid-gap: $small-margin;
+    min-width: 700px;
+}

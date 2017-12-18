@@ -1,0 +1,17 @@
+[libs]
+flow-typed/
+
+[ignore]
+.*/node_modules/stylelint/.*
+dist/
+examples/
+.*/node_modules/fbjs/.*
+.*/node_modules/flow-runtime/.*
+
+[options]
+module.system=haste
+module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/flow/stub/CSSModuleStub.js'
+suppress_type=$FlowIssue
+suppress_comment= \\(.\\|\n\\)*\\$FlowIssue
+unsafe.enable_getters_and_setters=true
+module.ignore_non_literal_requires=true

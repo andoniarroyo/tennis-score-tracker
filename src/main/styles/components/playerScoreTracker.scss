@@ -1,0 +1,18 @@
+.player-name {
+    font-size: 14pt;
+    padding-bottom: 1em;
+}
+
+.player-score-content {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-gap: 10px;
+}
+
+.score-main-value {
+    font-size: 5em;
+}
+
+.scored {
+    grid-column: span 2;
+}

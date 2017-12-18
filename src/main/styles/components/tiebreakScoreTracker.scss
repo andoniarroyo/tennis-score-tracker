@@ -1,0 +1,17 @@
+.tiebreak-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+.score-tiebreak {
+    font-size: 5em;
+}
+
+.tiebreak-mode-false {
+    visibility: hidden
+}
+
+.tiebreak-mode-true {
+    visibility: visible
+}

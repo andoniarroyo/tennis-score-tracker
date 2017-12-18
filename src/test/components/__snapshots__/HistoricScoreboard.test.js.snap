@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HistoricScoreBoard /> renders the historic scoreboard 1`] = `
+<table>
+  <thead>
+    <tr>
+      <td>
+        <span>
+          Scoreboard:
+        </span>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td
+        className="player-historic-name"
+      >
+        player 1:
+      </td>
+      <td>
+        6
+      </td>
+      <td>
+        6
+      </td>
+    </tr>
+    <tr>
+      <td
+        className="player-historic-name"
+      >
+        player 2:
+      </td>
+      <td>
+        4
+      </td>
+      <td>
+        4
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

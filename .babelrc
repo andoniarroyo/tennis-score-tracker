@@ -1,0 +1,31 @@
+{
+  "presets": [ "es2015", "stage-0", "react"],
+  "env": {
+    "development": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    },
+    "production": {
+      "plugins": [
+        "babel-plugin-source-map-support-for-6",
+        "transform-react-constant-elements",
+        "transform-react-inline-elements",
+        [
+          "transform-react-remove-statics",
+          {
+            "propTypes": true,
+            "defaultProps": true
+          }
+        ]
+      ]
+    }
+  },
+  "plugins": [
+    "jest-hoist",
+    "dynamic-import-webpack",
+    "transform-flow-strip-types",
+    "transform-runtime"
+  ],
+  "sourceMaps": true
+}
