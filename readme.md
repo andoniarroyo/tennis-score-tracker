@@ -1,6 +1,6 @@
-# Project Title
+# Tennis score tracker
 
-Tennis score tracker (Technical test for TES Global)
+(Technical test for TES Global)
 ## Getting Started
 
 ### Prerequisites
