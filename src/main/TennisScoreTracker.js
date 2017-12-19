@@ -22,24 +22,26 @@ export type TennisScoreTrackerPropsType = {
  * @returns {React$Element<any>} HTML markup for the component
  */
 const TennisScoreTracker = ({ score, updateScore }: TennisScoreTrackerPropsType) => (
-  <div>
-    <div className="title-section">
-      <div>Status: {score.status}</div>
-      <div>Winner: {score.winner || '...'}</div>
-    </div>
-    <MatchScoreTracker score={score} updateScore={updateScore} />
-    <HistoricScoreboard player1historicScoreboard={score.player1.historicScoreboard}
-      player2historicScoreboard={score.player2.historicScoreboard}
-    />
-    <div className="title-section">
-      <div>
+  <main>
+    <header>
+      <h3>Status: {score.status}</h3>
+      <h4>Winner: {score.winner || '...'}</h4>
+    </header>
+    <section>
+      <MatchScoreTracker score={score} updateScore={updateScore} />
+      <HistoricScoreboard player1historicScoreboard={score.player1.historicScoreboard}
+        player2historicScoreboard={score.player2.historicScoreboard}
+      />
+    </section>
+    <footer>
+      <h3>
         Other actions:
-      </div>
+      </h3>
       <button onClick={() => updateScore(matchScoreFactory())}>
         Reset the match and start again!
       </button>
-    </div>
-  </div>
+    </footer>
+  </main>
 );
 
 export default TennisScoreTracker;

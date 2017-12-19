@@ -17,7 +17,7 @@ type HistoricScoreboardPropsType = {
  */
 const renderHistoricScoreboard = (historicScoreboard: Array<number>): Array<React.Element<*>> => (
   historicScoreboard.map((historicScoreboardItem: number): React.Element<*> => (
-    <td key={shortid.generate()}>
+    <td key={shortid.generate()} className="player-historic-value">
       {historicScoreboardItem}
     </td>
   ))
@@ -30,29 +30,31 @@ const renderHistoricScoreboard = (historicScoreboard: Array<number>): Array<Reac
  */
 const HistoricScoreboard = ({ player1historicScoreboard, player2historicScoreboard }:
   HistoricScoreboardPropsType): React.Element<*> => (
-    <table>
-      <thead>
-        <tr>
-          <td>
-            <span>Scoreboard:</span>
-          </td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td className="player-historic-name">
-          player 1:
-          </td>
-          {renderHistoricScoreboard(player1historicScoreboard)}
-        </tr>
-        <tr>
-          <td className="player-historic-name">
-          player 2:
-          </td>
-          {renderHistoricScoreboard(player2historicScoreboard)}
-        </tr>
-      </tbody>
-    </table>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <td>
+              <h3>Scoreboard:</h3>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="player-historic-name">
+              player 1:
+            </td>
+            {renderHistoricScoreboard(player1historicScoreboard)}
+          </tr>
+          <tr>
+            <td className="player-historic-name">
+              player 2:
+            </td>
+            {renderHistoricScoreboard(player2historicScoreboard)}
+          </tr>
+        </tbody>
+      </table>
+    </section>
 );
 
 export default HistoricScoreboard;

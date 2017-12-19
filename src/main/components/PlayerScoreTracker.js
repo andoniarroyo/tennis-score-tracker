@@ -24,9 +24,9 @@ type PlayerScoreTrackerPropsType = {
 const PlayerScoreTracker = ({
   name, status, playerScore, updateScore, playerScored,
 }: PlayerScoreTrackerPropsType): React.Element<*> => (
-  <div>
-    <div className="player-name">{name}</div>
-    <div className="player-score-content">
+  <article>
+    <h3 className="player-name">{name}</h3>
+    <h4 className="player-score-content">
       <div>
         sets:
       </div>
@@ -50,8 +50,8 @@ const PlayerScoreTracker = ({
           {name} scored!
         </button>
       </div>
-    </div>
-  </div>
+    </h4>
+  </article>
 );
 
 export default PlayerScoreTracker;

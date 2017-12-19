@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PlayerScoreTracker /> renders the player score tracker 1`] = `
-<div>
-  <div
+<article>
+  <h3
     className="player-name"
   >
     andoni
-  </div>
-  <div
+  </h3>
+  <h4
     className="player-score-content"
   >
     <div>
@@ -41,6 +41,6 @@ exports[`<PlayerScoreTracker /> renders the player score tracker 1`] = `
          scored!
       </button>
     </div>
-  </div>
-</div>
+  </h4>
+</article>
 `;

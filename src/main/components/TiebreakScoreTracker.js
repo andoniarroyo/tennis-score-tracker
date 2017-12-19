@@ -12,8 +12,8 @@ type TiebreakScoreTrackerPropsType = {
 
 const TiebreakScoreTracker = ({ inTiebreakMode, player1TieBreak, player2TieBreak }:
   TiebreakScoreTrackerPropsType): React.Element<*> => (
-    <div className={`tiebreak-mode-${inTiebreakMode.toString()}`}>
-      <div>Tiebreak:</div>
+    <article className={`tiebreak-mode-${inTiebreakMode.toString()}`}>
+      <h3>Tiebreak:</h3>
       <div className="tiebreak-content">
         <div className="score-tiebreak">
           {player1TieBreak}
@@ -22,7 +22,7 @@ const TiebreakScoreTracker = ({ inTiebreakMode, player1TieBreak, player2TieBreak
           {player2TieBreak}
         </div>
       </div>
-    </div>
+    </article>
 );
 
 export default TiebreakScoreTracker;

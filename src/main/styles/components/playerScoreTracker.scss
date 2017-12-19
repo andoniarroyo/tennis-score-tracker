@@ -1,6 +1,7 @@
+@import "../base/_variables";
+
 .player-name {
-    font-size: 14pt;
-    padding-bottom: 1em;
+    font-size: $default-font-size;
 }
 
 .player-score-content {

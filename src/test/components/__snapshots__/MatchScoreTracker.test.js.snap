@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MatchScoreTracker /> renders the match score tracker 1`] = `
-<div
+<section
   className="container"
 >
-  <div>
-    <div
+  <article>
+    <h3
       className="player-name"
     >
       player1
-    </div>
-    <div
+    </h3>
+    <h4
       className="player-score-content"
     >
       <div>
@@ -44,14 +44,14 @@ exports[`<MatchScoreTracker /> renders the match score tracker 1`] = `
            scored!
         </button>
       </div>
-    </div>
-  </div>
-  <div
+    </h4>
+  </article>
+  <article
     className="tiebreak-mode-false"
   >
-    <div>
+    <h3>
       Tiebreak:
-    </div>
+    </h3>
     <div
       className="tiebreak-content"
     >
@@ -66,14 +66,14 @@ exports[`<MatchScoreTracker /> renders the match score tracker 1`] = `
         0
       </div>
     </div>
-  </div>
-  <div>
-    <div
+  </article>
+  <article>
+    <h3
       className="player-name"
     >
       player2
-    </div>
-    <div
+    </h3>
+    <h4
       className="player-score-content"
     >
       <div>
@@ -107,7 +107,7 @@ exports[`<MatchScoreTracker /> renders the match score tracker 1`] = `
            scored!
         </button>
       </div>
-    </div>
-  </div>
-</div>
+    </h4>
+  </article>
+</section>
 `;

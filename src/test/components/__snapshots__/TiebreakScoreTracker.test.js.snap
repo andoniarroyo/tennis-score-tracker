@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TiebreakScoreTracker /> renders the tiebreak score tracker 1`] = `
-<div
+<article
   className="tiebreak-mode-true"
 >
-  <div>
+  <h3>
     Tiebreak:
-  </div>
+  </h3>
   <div
     className="tiebreak-content"
   >
@@ -21,5 +21,5 @@ exports[`<TiebreakScoreTracker /> renders the tiebreak score tracker 1`] = `
       8
     </div>
   </div>
-</div>
+</article>
 `;

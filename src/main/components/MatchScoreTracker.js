@@ -16,7 +16,7 @@ import '../styles/components/matchScoreTracker.scss';
  * @returns {React$Element<any>} HTML markup for the component
  */
 const MatchScoreTracker = ({ score, updateScore }: TennisScoreTrackerPropsType): React.Element<*> => (
-  <div className="container">
+  <section className="container">
     <PlayerScoreTracker name="player1"
       status={score.status}
       playerScore={score.player1}
@@ -33,7 +33,7 @@ const MatchScoreTracker = ({ score, updateScore }: TennisScoreTrackerPropsType):
       updateScore={updateScore}
       playerScored={player2Scored.bind(null, score)}
     />
-  </div>
+  </section>
 );
 
 export default MatchScoreTracker;

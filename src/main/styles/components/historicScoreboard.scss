@@ -1,3 +1,9 @@
+@import "../base/_variables";
+
 .player-historic-name {
-    font-size: 14pt;
+    font-size: $default-font-size;
+}
+
+.player-historic-value {
+    font-size: $default-font-size;
 }
