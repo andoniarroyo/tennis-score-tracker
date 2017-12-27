@@ -17,11 +17,11 @@ const reducers = {
 
 /**
  * Reduces the score in the state based on the received action
- * @param {object} score The current score
- * @param { CommonActionType } action The action to be evaluated
- * @returns {object} The new reduced score
+ * @param {MatchScoreType} score The current score
+ * @param {CommonActionType} action The action to be evaluated
+ * @returns {MatchScoreType} The new reduced score
  */
-const scoreReducer = (score: MatchScoreType = matchScoreFactory(), action: CommonActionType) => {
+const scoreReducer = (score: MatchScoreType = matchScoreFactory(), action: CommonActionType): MatchScoreType => {
   const reducer = reducers[action.type];
   return reducer ? reducer(score, action) : score;
 };

@@ -5,7 +5,7 @@ import {
   UPDATE_SCORE_REQUESTED,
 } from '../main/constants';
 
-describe.only('constants.js', () => {
+describe('constants.js', () => {
   it('defines the number of sets to win a match', () => {
     expect(typeof SETS_TO_WIN).toBe('number');
   });
